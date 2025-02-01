@@ -1,0 +1,28 @@
+print("You are in a forest and you see a bear.")
+choice = int(input("Choose how to survive: run = 1, fight = 2, or hide = 3:\n"))
+if choice == 1:
+  print("You run away from the bear and find a cave.")
+  cave = int(input("Do you want to go into the cave? Yes = 1, No = 2:\n"))
+  if cave == 1:
+    print("You go into the cave and find a treasure chest.")
+    chest = int(input("Do you want to open the chest? Y = 1, N= 2:\n"))
+    if chest == 1:
+      print("You open the chest and find a treasure map.")
+      map = int(input(print("Do you want to follow the map? Y =1, N = 2:\n")))
+      if map == 1:
+        print("You follow the map and find a treasure.")
+        treasure = int(input("Do you want to take the treasure? Y =1, N = 2:\n"))
+        if treasure == 1:
+          print("You take the treasure and become rich.")
+        else:
+          print("You leave the treasure and go home.")
+      else:
+        print("You leave the map and go home.")
+    else:
+      print("You leave the chest and go out of the cave. Bear kills you.")
+  else:
+    print("You stay outside and the bear finds you. You die.")
+elif choice == 2:
+  print("You try to fight the bear but it is too strong. You die.")
+else:
+  print("You hide in the bushes and the bear doesn't see you. You survive.")
